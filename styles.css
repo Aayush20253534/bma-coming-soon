@@ -379,3 +379,51 @@ h1 {
   .page-shell { min-height: 490px; height: auto; }
   .hero-art { min-height: 235px; }
 }
+
+
+/* Official BlinkMyAd logo: blue mark and black wordmark on a clean white plate. */
+.brand {
+  margin-left: 0;
+  padding: 10px 14px;
+  background: #fff;
+  border: 1px solid rgba(255,255,255,.96);
+  border-radius: 11px;
+  box-shadow: 0 6px 24px rgba(1,5,17,.16);
+  line-height: 0;
+  transition: box-shadow .2s ease;
+}
+.brand:hover { box-shadow: 0 8px 30px rgba(33,99,255,.24); }
+.brand:focus-visible { outline-color: #69c0ff; }
+.brand img {
+  display: block;
+  width: clamp(146px, 13vw, 184px);
+  height: auto;
+  aspect-ratio: 1871 / 337;
+}
+.screen__content img {
+  width: min(87%, 340px);
+  height: auto;
+  aspect-ratio: 1871 / 337;
+  margin: 10px 0 14px 0;
+  padding: clamp(9px, 1.3vw, 15px) clamp(11px, 1.5vw, 17px);
+  background: #fff;
+  border: 1px solid rgba(255,255,255,.96);
+  border-radius: 7px;
+  box-shadow: 0 10px 34px rgba(2,7,25,.26);
+}
+.screen__content p { margin-top: 0; }
+@media (max-width: 780px) {
+  .brand { padding: 8px 11px; border-radius: 9px; }
+  .brand img { width: clamp(128px, 20vw, 158px); }
+  .screen__content img { width: min(81%, 315px); padding: 9px 11px; margin: 6px 0 12px; }
+}
+@media (max-width: 510px) {
+  .brand { padding: 7px 9px; border-radius: 8px; }
+  .brand img { width: clamp(113px, 30vw, 136px); }
+  .screen__content img { width: 81%; padding: 7px 9px; margin: 5px 0 8px; border-radius: 5px; }
+}
+@media (max-height: 610px) and (min-width: 600px) {
+  .brand { padding: 5px 9px; }
+  .brand img { width: 145px; }
+  .screen__content img { padding: 7px 10px; margin: 3px 0 6px; }
+}
